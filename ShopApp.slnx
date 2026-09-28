@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ShopApp.BLL/ShopApp.BLL.csproj" />
+  <Project Path="ShopApp.Common/ShopApp.Common.csproj" />
+  <Project Path="ShopApp.DAL/ShopApp.DAL.csproj" />
+  <Project Path="ShopApp.UI/ShopApp.UI.csproj" />
+</Solution>
