@@ -6,3 +6,5 @@ obj/
 shopapp.db
 __pycache__/
 .venv/
+log.txt
+*.log
