@@ -2,3 +2,7 @@ bin/
 obj/
 .vs/
 *.user
+*.db
+shopapp.db
+__pycache__/
+.venv/
