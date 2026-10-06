@@ -40,6 +40,7 @@ public class ShopDbContext : DbContext
             e.HasOne(o => o.Client)
                 .WithMany(c => c.Orders)
                 .HasForeignKey(o => o.ClientId);
+            e.Property(o => o.Status).HasConversion<string>();
         });
 
         modelBuilder.Entity<OrderItem>(e =>
@@ -51,5 +52,6 @@ public class ShopDbContext : DbContext
                 .WithMany(p => p.OrderItems)
                 .HasForeignKey(i => i.ProductId);
         });
+        
     }
 }

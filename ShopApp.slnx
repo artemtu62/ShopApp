@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Part1_Interfaces/Part1_Interfaces.csproj" />
+  <Project Path="ShopApp.BLL.Tests/ShopApp.BLL.Tests.csproj" />
   <Project Path="ShopApp.BLL/ShopApp.BLL.csproj" />
   <Project Path="ShopApp.Common/ShopApp.Common.csproj" />
   <Project Path="ShopApp.DAL/ShopApp.DAL.csproj" />

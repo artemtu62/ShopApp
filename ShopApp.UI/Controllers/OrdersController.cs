@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ShopApp.BLL.Services;
+using ShopApp.Common.Models;
 
 namespace ShopApp.UI.Controllers;
 
@@ -7,10 +7,10 @@ namespace ShopApp.UI.Controllers;
 [Route("api/[controller]")]
 public class OrdersController : ControllerBase
 {
-    private readonly OrderService _service;
-
-    public OrdersController(OrderService service) => _service = service;
-
     [HttpGet]
-    public IActionResult GetAll() => Ok(_service.GetOrders());
+    public IActionResult GetAll()
+    {
+        // Заглушка: реальный OrderService появится позже.
+        return Ok(Array.Empty<Order>());
+    }
 }

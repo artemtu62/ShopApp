@@ -87,7 +87,7 @@ using (var uow = new UnitOfWork(new ShopDbContext(options)))
     {
         Client = client,
         OrderDate = new DateTime(2026, 9, 30),
-        Status = "Новый",
+        Status = OrderStatus.Новый,
         Total = 64000m
     });
 
